@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+{% if img %}
+    <img src="/images/{{ img }}" />
+{% endif %} 
+
+<div class="container">
+    <h1> {{ title }} </h1>
+
+    <div>
+        <small>{{ author }}</small>
+    </div>
+
+</div>
+
+{{ content | safe }}
