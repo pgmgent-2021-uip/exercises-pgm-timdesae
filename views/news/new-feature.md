@@ -4,6 +4,10 @@ title: Our app has a new feature
 author: Tim De Saeger
 ---
 
-<article>
- <h2>Dit is een subtitle</h2>
-</article>
+# Test met markdown (h1)
+## Nog een test (h2)
+
+Test
+Nog een test
+
+---
