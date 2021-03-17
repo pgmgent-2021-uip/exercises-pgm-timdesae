@@ -6,3 +6,31 @@ body {
     color: $primary-purple;
     font: normal 125% / 1.4 $text-font-stack;
 }
+
+h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: $margin-bigger;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+  
+h3 {
+    font-size: 1.3125rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0.7rem 0;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.65rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}

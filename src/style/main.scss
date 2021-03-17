@@ -22,7 +22,8 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/hero';
 
 // 5. Components
 @import
@@ -35,7 +36,3 @@
 // 7. Themes
 @import
   'themes/default';
-
-  body {
-      background-color: #fff;
-  }
