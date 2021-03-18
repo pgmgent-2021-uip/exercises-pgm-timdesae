@@ -1,0 +1,18 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: $margin-base;
+    padding: $padding-big;
+    background: $lightest;
+    border-radius: 1rem;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+}
+
+.card > img {
+    height: 3rem;
+}

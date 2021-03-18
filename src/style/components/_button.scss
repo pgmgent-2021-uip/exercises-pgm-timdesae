@@ -1,3 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.primary-button {
+    font-size: 1rem;
+    background: $lightest;
+    color: $primary-orange;
+    border-radius: 0.5rem;
+    border: 1px solid $primary-orange;
+    padding: $padding-small $padding-base;
+    box-shadow: 0 8px 6px -6px $primary-orange;
+    transition: all 0.4s ease;
+    margin-top: $margin-base;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    background: $primary-orange;
+    color: $lighter;
+}
