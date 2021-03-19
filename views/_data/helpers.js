@@ -1,5 +1,6 @@
 module.exports = {
   currentYear() {
-    return '2020'
+    const today = new Date();
+    return today.getFullYear();
   }
 }

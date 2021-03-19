@@ -19,7 +19,7 @@ eleventyNavigation:
             </div>
             
             <div class="hero-text-p">
-                <h2>Ga op pad en verzamel badges en win kortingsbonnen</h2>
+                <h2>Ga op pad, verzamel badges en win kortingsbonnen</h2>
                 <p>Verzamel alle badges en complete de challenge.</p>
             </div>
 
@@ -51,4 +51,20 @@ eleventyNavigation:
         <p>Ga je graag op pad als een padvinder of liever met een safari hoed en verrekijker? Jij beslist zelf hoe jouw karakter er uit ziet!</p>
         <button class="primary-button">Learn more</button>
     </div>
+</section>
+
+<section class="h-layout testimonial">
+    {% for quote in quotes %}
+        {{ quote.quote }}
+        {{ quote.author }}
+    {% endfor %}
+</section>
+
+<section class="h-layout cards">
+        {% for feature in collections.features %}
+            <div class="card">
+                <h2>{{ feature.data.title }}</h2>
+                <p>{{ feature.data.text }}</p>
+            </div>
+        {% endfor %}
 </section>
