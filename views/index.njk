@@ -53,18 +53,25 @@ eleventyNavigation:
     </div>
 </section>
 
-<section class="h-layout testimonial">
-    {% for quote in quotes %}
-        {{ quote.quote }}
-        {{ quote.author }}
-    {% endfor %}
-</section>
-
 <section class="h-layout cards">
         {% for feature in collections.features %}
             <div class="card">
+                <img src="./images/{{ feature.data.icon }}" alt="icon">
                 <h2>{{ feature.data.title }}</h2>
                 <p>{{ feature.data.text }}</p>
+                <button class="primary-button">Learn more</button>
             </div>
         {% endfor %}
 </section>
+
+<section class="h-layout testimonials">
+    {% for quote in quotes %}
+        <div class="testimonial">
+            <span class="sign">''</span>
+            <p>{{ quote.quote }}</p>
+            <span>{{ quote.date }}</span>
+            <span>{{ quote.author }}</span>
+        </div>
+    {% endfor %}
+</section>
+

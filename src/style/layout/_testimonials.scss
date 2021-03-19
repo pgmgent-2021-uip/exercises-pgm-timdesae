@@ -1,0 +1,14 @@
+.testimonials {
+    margin-top: $margin-large;
+    display: flex;
+    justify-content: space-between;
+    padding: $padding-base;
+}
+
+.testimonial {
+    width: 30%;
+}
+
+.sign {
+    font-size: 3rem;
+}

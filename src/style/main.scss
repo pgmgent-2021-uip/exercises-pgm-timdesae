@@ -24,7 +24,8 @@
   'layout/header',
   'layout/footer',
   'layout/hero',
-  'layout/cards';
+  'layout/cards',
+  'layout/testimonials';
 
 // 5. Components
 @import
@@ -37,7 +38,3 @@
 // 7. Themes
 @import
   'themes/default';
-
-  body {
-      background: red;
-  }

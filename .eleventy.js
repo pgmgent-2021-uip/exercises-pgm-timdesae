@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addPassthroughCopy({
-    'src/main.css':'main.css',
+    'src/main.css':'/assets/main.css',
     'src/images': '/images'
   });
   return {
