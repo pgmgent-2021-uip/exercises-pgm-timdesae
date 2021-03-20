@@ -31,29 +31,6 @@ eleventyNavigation:
 </section>
 
 <section class="h-layout cards">
-    <div class="card">
-        <img src="./images/qr-code.svg" alt="icon">
-        <h2>Badges met Qr code</h2>
-        <p>Ga zelf op zoek naar badges met bijhorende QR code. Scan de codes en win prachtige kortingen in jouw favoriete sportwinkel.</p>
-        <button class="primary-button">Learn more</button>
-    </div>
-
-    <div class="card">
-        <img src="./images/guarantee.svg" alt="icon">
-        <h2>New challenges</h2>
-        <p>Verzamel alle badges en complete uitdagende challenges in jouw buurt.</p>
-        <button class="primary-button">Learn more</button>
-    </div>
-
-    <div class="card">
-        <img src="./images/customize.svg" alt="icon">
-        <h2>Customize</h2>
-        <p>Ga je graag op pad als een padvinder of liever met een safari hoed en verrekijker? Jij beslist zelf hoe jouw karakter er uit ziet!</p>
-        <button class="primary-button">Learn more</button>
-    </div>
-</section>
-
-<section class="h-layout cards">
         {% for feature in collections.features %}
             <div class="card">
                 <img src="./images/{{ feature.data.icon }}" alt="icon">
@@ -64,14 +41,30 @@ eleventyNavigation:
         {% endfor %}
 </section>
 
-<section class="h-layout testimonials">
-    {% for quote in quotes %}
+<section class="h-layout">
+    <h1 class="center">Testimonials</h1>
+    <div class="testimonials">
+        {% for quote in quotes %}
         <div class="testimonial">
-            <span class="sign">''</span>
-            <p>{{ quote.quote }}</p>
-            <span>{{ quote.date }}</span>
-            <span>{{ quote.author }}</span>
+            <p><span class="sign">''</span>{{ quote.quote }}</p>
+            <div class="testimonial_review">
+                <img class="user" src="./images/{{ quote.user }}" alt="icon">
+                <div class="testimonial_review_info">
+                    <span class="user-name">{{ quote.author }}</span>
+                    <span class="user-date">{{ quote.date }}</span>
+                </div>
+            </div>
         </div>
-    {% endfor %}
+        {% endfor %}    
+    </div>
+</section>
+
+<section class="h-layout">
+    <h1 class="center">Klanten</h1>
+    <div class="customers">
+        {% for customer in customers %}
+            <img class="customer__logo" src="./images/{{ customer.logo }}" alt="icon">
+        {% endfor %}
+    </div>
 </section>
 

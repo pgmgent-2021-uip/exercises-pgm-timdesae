@@ -2,12 +2,15 @@
  * Basic typography style for copy text
  */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: $primary-purple;
-    font: normal 125% / 1.4 $text-font-stack;
 }
 
 h1 {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
     font-size: 2.1rem;
     line-height: 1.2;
     font-weight: 700;
@@ -15,6 +18,7 @@ h1 {
 }
 
 h2 {
+    font-family: futura-pt, sans-serif;
     font-size: 1.75rem;
     line-height: 1.2;
     font-weight: 400;
@@ -22,6 +26,7 @@ h2 {
 }
   
 h3 {
+    font-family: proxima-nova, sans-serif;
     font-size: 1.3125rem;
     line-height: 1.5;
     font-weight: 400;
@@ -29,6 +34,8 @@ h3 {
 }
 
 p {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
     font-size: 1.05rem;
     line-height: 1.65rem;
     font-weight: 300;

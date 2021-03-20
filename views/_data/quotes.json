@@ -2,16 +2,19 @@
     {
         "quote" : "Great for finding trails I would otherwise never know about. Everywhere we go, we discover trails. Have even found trails near our home we never knew about.",
         "author" : "Marlene Crowell",
-        "date" : "19/03/2021"
+        "date" : "19/03/2021",
+        "user" : "user3.png"
     },
     {
         "quote" : "Best hiking app ever. Don't leave home without it. It's for your safety, when you are at the fork on the trail and don't know which way to go it could save your life.",
         "author" : "Stan Moore-Rainczuk",
-        "date" : "12/02/2021"
+        "date" : "12/02/2021",
+        "user" : "user4.png"
     },
     {
         "quote" : "HiKing is my favorite app. It takes me places I would otherwise never go but am always glad I did.",
         "author" : "Greg Mardsen",
-        "date" : "12/02/2021"
+        "date" : "12/02/2021",
+        "user" : "user5.png"
     }
 ]

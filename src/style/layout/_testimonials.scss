@@ -1,5 +1,4 @@
 .testimonials {
-    margin-top: $margin-large;
     display: flex;
     justify-content: space-between;
     padding: $padding-base;
@@ -9,6 +8,41 @@
     width: 30%;
 }
 
+.testimonial > p {
+    height: 8rem;
+}
+
+
 .sign {
+    font-family: futura-pt, sans-serif;
+    color: $primary-orange;
     font-size: 3rem;
+}
+
+.user {
+    display: inline-block;
+    border: 1px solid $primary-orange;
+    border-radius: 1rem;
+    width: 5rem;
+    margin-right: $margin-base;
+}
+
+.user-date{
+    font-weight: 400;
+}
+
+.user-name{
+    font-weight: 700;
+    margin-bottom: $margin-small;
+}
+
+.testimonial_review {
+    margin-top: $margin-base;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial_review_info {
+    display: flex;
+    flex-direction: column;
 }
