@@ -59,7 +59,7 @@ eleventyNavigation:
     </div>
 </section>
 
-<section class="h-layout">
+<section class="h-layout customers-section">
     <h1 class="center">Klanten</h1>
     <div class="customers">
         {% for customer in customers %}
@@ -68,3 +68,17 @@ eleventyNavigation:
     </div>
 </section>
 
+<section class="h-layout">
+    <h1 class="center">Blogs</h1>
+    <div class="cards">
+        {% for blog in collections.blogs %}
+            <div class="card">
+                <h2>{{ blog.data.title }}</h2>
+                <p>{{ blog.data.text }}</p>
+                <span>{{ blog.data.author }}</span>
+                <span>{{ blog.data.created }}</span>
+                <button class="primary-button">Read more</button>
+            </div>
+        {% endfor %}
+    </div>
+</section>

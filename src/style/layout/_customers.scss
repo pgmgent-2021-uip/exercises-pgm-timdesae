@@ -4,5 +4,16 @@
 }
 
 .customers > img {
-height: 5rem;
+    height: 5rem;
+    opacity: 60%;
+}
+
+.customers > img:hover {
+    height: 5rem;
+    opacity: 100%;
+}
+
+.customers-section {
+    margin-top: $margin-large;
+    margin-bottom: $margin-large;
 }

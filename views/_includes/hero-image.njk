@@ -4,16 +4,18 @@ layout: base
 
 <img src="http://picsum.photos/1240/320">
 
-<h1>{{title}}</h1>
-<h2>{{subtitle}}</h2>
+<section class="h-layout">
+    <h1>{{title}}</h1>
+    <h2>{{subtitle}}</h2>
 
 
-{{content | safe}}
+    {{content | safe}}
 
-<ul>
-    {% for author in allAuthors %}
-        <li>
-            {{ author }}
-        </li>
-    {% endfor %}
-</ul>
+    <ul>
+        {% for author in allAuthors %}
+            <li>
+                {{ author }}
+            </li>
+        {% endfor %}
+    </ul>
+</section>
