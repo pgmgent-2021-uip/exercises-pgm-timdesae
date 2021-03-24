@@ -1,3 +1,58 @@
+{% set navPages = collections.all | eleventyNavigation %}
+
 <footer>
-    <p>Copyright {{ helpers.currentYear()}} @ De Saeger Tim</p>
+    <div class="footer h-layout">
+    
+        <section class="footer__logo">
+            <img src="/images/logo-hiking.svg" alt="">
+            <p>Hier komt het logo en kleine uitleg</p>
+        </section>
+
+        <section class="footer__navigation">
+            <h3>Navigation</h3>
+            <ul class="navbar_list">
+                {% for navItem in navPages %}
+                    <li>
+                        <a href="{{ navItem.url }}">
+                            {% if page.url === navItem.url %}
+                                <strong class="active">
+                                    {{ navItem.title }} 
+                                </strong>
+                            {% else %}
+                                    {{ navItem.title }}
+                            {% endif %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section class="footer__socials">
+            <h3>Follow us</h3>
+            <ul>
+                <li>
+                    <a href="/">Facebook</a>
+                </li>
+                <li>
+                    <a href="/">Instagram</a>
+                </li>
+                <li>
+                    <a href="/">Twitter</a>
+                </li>
+                <li>
+                    <a href="/">YouTube</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="footer__product">
+            <h3>Our product</h3>
+            <p>Ons product is verkrijgbaar via ...</p>
+        </section>
+
+        <section class="footer__copyright">
+            <p class="center">Copyright {{ helpers.currentYear()}} @ De Saeger Tim</p>
+        </section>
+
+    </div>
 </footer>

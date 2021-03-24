@@ -3,7 +3,52 @@
 // -----------------------------------------------------------------------------
 
 footer {
-    margin-top: $margin-bigger;
-    text-align: center;
-    font-size: 1rem;
+    background: $lightest;
+    padding-top: $padding-big;
+    padding-bottom: $padding-base;
+
+    h3 {
+        text-transform: uppercase;
+        font-size: $font-size-normal;
+        font-weight: 700;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    
+        .footer__logo {
+            width: 40%;
+
+            img {
+                width: 10rem;
+            }
+        }
+    
+        .footer__navigation {
+            width: 20%;
+            li {
+                margin-bottom: $margin-small;
+            }
+        }
+    
+        .footer__socials {
+            width: 20%;
+            li {
+                margin-bottom: $margin-small;
+            }
+        }
+        
+        .footer__product {
+            width: 20%;
+        }
+    
+        .footer__copyright {
+            opacity: 50%;
+            margin: 0 auto;
+            p {
+                font-size: $font-size-normal;
+            }
+        }
+    }
 }
