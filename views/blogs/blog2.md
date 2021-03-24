@@ -3,7 +3,7 @@ img: 'banner.jpeg'
 title: Ik stap waar het moet!
 text: "In deze coronaperiode is er steeds één constante die terugkeert : wandelen! Wandelen is in, wandelen is hot. Maar stap je nu beter links…"
 created: "februari 8, 2021"
-author: Tim
+image: "Ik-stap-waar-het-moet.jpeg"
 ---
 
 # Test met markdown (h1)

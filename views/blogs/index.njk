@@ -11,6 +11,24 @@ eleventyNavigation:
     order: 3
 ---
 
+<section class="h-layout">
+    <h1 class="center">Blogs</h1>
+    <div class="cards cards-blog">
+        {% for blog in collections.blogs %}
+            <div class="card card-blog">
+                <img class="card-blog__image" src="../images/{{ blog.data.image }}" alt="blog image">
+                <div class="card-blog__content">
+                    <h2>{{ blog.data.title }}</h2>
+                    <p>{{ blog.data.text }}</p>
+                    <span class="card-blog__content__created">{{ blog.data.created }}</span>
+                    <button class="primary-button">Read more</button>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
 {# <section class="h-layout">
     <h1>Blogs</h1>
     <p>Hier komen alle blogs</p>
