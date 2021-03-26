@@ -2,12 +2,11 @@
 layout: base
 ---
 
-<img src="http://picsum.photos/1240/320">
+<img class="blog-detail-jumbotron" src="../../images/{{ image }}" alt="blog image">
 
 <section class="h-layout">
-    <h1>{{title}}</h1>
-    <h2>{{subtitle}}</h2>
-
+    <h1>{{ title }}</h1>
+    <p>{{ created }}</p>
 
     {{content | safe}}
 

@@ -23,6 +23,7 @@
 .cards-blog {
     background: $background;
     padding: 0rem;
+    flex-wrap: wrap;
 }
 
 .card-blog {
@@ -32,6 +33,7 @@
     height: 35rem;
     background: $lightest;
     transition: all 0.3s ease;
+    margin-bottom: $margin-big;
 }
 
 .card-blog:hover {

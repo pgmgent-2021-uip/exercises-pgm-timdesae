@@ -71,7 +71,7 @@ eleventyNavigation:
 <section class="h-layout">
     <h1 class="center">Blogs</h1>
     <div class="cards cards-blog">
-        {% for blog in collections.blogs %}
+        {% for blog in collections.blogs | coverFilter %}
             <div class="card card-blog">
                 <img class="card-blog__image" src="./images/{{ blog.data.image }}" alt="blog image">
                 <div class="card-blog__content">
