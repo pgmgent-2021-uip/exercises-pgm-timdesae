@@ -29,6 +29,14 @@ Horizontal layout
     position: relative;
   }
 
+.h-layout--small {
+    width: 50rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+}
+
 /**
  * Basic styles for links
  */

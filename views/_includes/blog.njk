@@ -2,19 +2,25 @@
 layout: base
 ---
 
-<img class="blog-detail-jumbotron" src="../../images/{{ image }}" alt="blog image">
+<img class="blog-detail__jumbotron" src="../../images/{{ image }}" alt="blog image">
 
-<section class="h-layout">
+<section class="blog-detail h-layout--small">
     <h1>{{ title }}</h1>
-    <p>{{ created }}</p>
+    <span class="blog-detail__created">{{ created }}</span>
+
+    <p class="blog-detail__intro">{{ intro }}</p>
+
+    <img src="../../images/{{ image }}" alt="blog image">
 
     {{content | safe}}
 
-    <ul>
-        {% for author in allAuthors %}
-            <li>
-                {{ author }}
-            </li>
-        {% endfor %}
-    </ul>
-</section>
+    {#     <ul>
+            {% for author in allAuthors %}
+                <li>
+                    {{ author }}
+                </li>
+            {% endfor %}
+        </ul>
+    #}
+
+ </section>

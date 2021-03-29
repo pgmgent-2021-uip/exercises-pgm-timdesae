@@ -1,0 +1,37 @@
+.blog-detail {
+    margin-bottom: $margin-large;
+
+    h1 {
+        font-size: $font-size-huge;
+        text-align: center;
+        margin-top: $margin-large;
+    }
+
+    .blog-detail__created {
+        display: block;
+        color: $primary-orange;
+        text-align: center;
+        margin-bottom: $margin-base;
+    }
+
+    .blog-detail__intro {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: $margin-base;
+    }
+
+    h2 {
+        color: $primary-orange;
+    }
+
+    img {
+        margin-top: $margin-base;
+        margin-bottom: $margin-base;
+    }
+
+    ul {
+        list-style: circle;
+        margin-left: $margin-base;
+    }
+}
