@@ -42,7 +42,7 @@ eleventyNavigation:
 </section>
 
 <section class="h-layout">
-    <h1 class="center">Testimonials</h1>
+    <h1 class="left">Testimonials</h1>
     <div class="testimonials">
         {% for quote in quotes %}
         <div class="testimonial">
@@ -60,7 +60,7 @@ eleventyNavigation:
 </section>
 
 <section class="h-layout customers-section">
-    <h1 class="center">Klanten</h1>
+    <h1 class="left">Klanten</h1>
     <div class="customers">
         {% for customer in customers %}
             <img class="customer__logo" src="./images/{{ customer.logo }}" alt="icon">
@@ -69,7 +69,7 @@ eleventyNavigation:
 </section>
 
 <section class="h-layout">
-    <h1 class="center">Blogs</h1>
+    <h1 class="left">Blogs</h1>
     <div class="cards cards-blog">
         {% for blog in collections.blogs | coverFilter %}
             <div class="card card-blog">
@@ -78,7 +78,7 @@ eleventyNavigation:
                     <h2>{{ blog.data.title }}</h2>
                     <p>{{ blog.data.text }}</p>
                     <span class="card-blog__content__created">{{ blog.data.created }}</span>
-                    <button class="primary-button">Read more</button>
+                    <a href="{{ blog.url }}" class="primary-button">Read more</a>
                 </div>
             </div>
         {% endfor %}

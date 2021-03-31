@@ -5,6 +5,10 @@
         font-size: $font-size-huge;
         text-align: center;
         margin-top: $margin-large;
+
+        &::before {
+            width: 0;
+        }
     }
 
     .blog-detail__created {

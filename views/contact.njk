@@ -1,11 +1,41 @@
 ---
-layout: base
-title: contact
+layout: aboutcontact
+title: Let's talk
 eleventyNavigation:
     key: Contact
     order: 5
+image: "contact-banner.jpg"
 ---
-<section class="h-layout">
-    <h1>Contact</h1>
-    <p>Dit is de contact page</p>
-</section>
+
+<article class="aboutcontact h-layout">
+    <div class="aboutcontact__subtitel">
+        <h1>{{ title }}</h1>
+        <p>Describe your project and leave us your contact
+            info, we’ll get back to you within 24 hours.</p>
+
+    {#  <h3>Contact our studio:</h3>
+        <p>TimDSign</p>
+        <p>Kerkhofstraat 71</p>
+        <p>9406 Outer, Belgium</p>
+        <p>+32 472 85 75 98</p> #}    
+    </div>
+
+    <div class="aboutcontact__form">
+        <h1>We're here for you. Say hi.</h1>
+
+        <form action="">
+            <div class="form-item">
+              <input type="text" id="name" name="user_name" placeholder="What's your name?">
+            </div>
+            <div class="form-item">
+              <input type="email" id="email" name="user_email" placeholder="What's your e-mail?">
+            </div>
+            <div class="form-item">
+              <textarea id="story" name="story" rows="5" cols="33" placeholder="Your message *"></textarea>
+            </div>
+            <button class="secundary-button">send!</button>
+        </form>
+
+
+    </div>
+</article>

@@ -1,5 +1,6 @@
 ---
 title: "Honden aan de leiband: JA of NEE?"
+author: Stef
 text: "Loslopende honden zorgen bij mensen, die hiermee geconfronteerd worden, regelmatig voor een onveiligheidsgevoel. Niet enkel honden die onbeheerd rondlopen, maar ook baasjes die hun…"
 created: "november 17, 2021"
 image: "hond.jpeg"

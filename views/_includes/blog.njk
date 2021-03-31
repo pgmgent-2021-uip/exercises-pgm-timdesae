@@ -4,23 +4,32 @@ layout: base
 
 <img class="blog-detail__jumbotron" src="../../images/{{ image }}" alt="blog image">
 
-<section class="blog-detail h-layout--small">
+<article class="blog-detail h-layout--small">
     <h1>{{ title }}</h1>
-    <span class="blog-detail__created">{{ created }}</span>
+    <span class="blog-detail__created">By {{ author }} | Posted on {{ created }}</span>
 
     <p class="blog-detail__intro">{{ intro }}</p>
 
     <img src="../../images/{{ image }}" alt="blog image">
 
-    {{content | safe}}
+    {{ content | safe }}
 
-    {#     <ul>
-            {% for author in allAuthors %}
-                <li>
-                    {{ author }}
-                </li>
-            {% endfor %}
-        </ul>
-    #}
 
- </section>
+    {% if collections.blogs | length %}
+        <section class="h-layout">
+            <h2>Andere artikels:</h2>
+            <ul>
+                {% for blog in collections.blogs %}
+                    {% if blog.url != page.url %}
+                        <li>
+                            <a href="{{ blog.url }}">
+                                <h3>{{ blog.data.title }}</h3>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+    {% endif %}
+
+ </article>

@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .primary-button {
+    display: inline-block;
     font-size: 1rem;
     background: $lightest;
     color: $primary-orange;
@@ -19,3 +20,23 @@
     background: $primary-orange;
     color: $lighter;
 }
+
+.secundary-button {
+    display: inline-block;
+    font-size: 1rem;
+    background: $primary-orange;
+    color: $lightest;
+    border: none;
+    border-radius: 0.5rem;
+    padding: $padding-small $padding-base;
+    box-shadow: 0 8px 6px -6px $primary-orange;
+    transition: all 0.4s ease;
+    margin-top: $margin-base;
+}
+
+.secundary-button:hover,
+.secundary-button:focus {
+    background: $dark-orange;
+    color: $lighter;
+}
+

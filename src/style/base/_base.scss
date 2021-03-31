@@ -63,6 +63,24 @@ ul {
     text-align: center;
 }
 
+.left {
+    text-align: left;
+}
+
 strong {
     font-weight: 900;
+}
+
+nav {
+    height: 4rem;
+}
+
+h1::before {
+    display: block;
+    content: '';
+    width: 8rem;
+    height: 2px;
+    background: $primary-orange;
+    transition: all 0.3s ease;
+    margin-bottom: $margin-small;
 }
