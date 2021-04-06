@@ -3,13 +3,10 @@
 // -----------------------------------------------------------------------------
 
 .navbar {
-    position: sticky;
-    top: 0;
-
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 1.5rem;
+    z-index: 100;
 
     > a {
         color: $primary-purple;
@@ -29,9 +26,35 @@
     ul {
         list-style: none;
         display: flex;
+        justify-content: center;
 
         li {
             margin-left: $margin-bigger;
+
+            ul {
+                display: none;
+                position: absolute;
+                flex-direction: column;
+                z-index: 1;
+                background: $background;
+
+                li {
+                    margin-top: $margin-base;
+                    margin-left: 0;
+
+                    a {
+                        color: $primary-purple;
+                    }
+
+                    a:hover {
+                        color: $primary-orange;
+                    }
+                }
+            }
+        }
+
+        li:hover ul {
+            display: block;
         }
         
         .active {

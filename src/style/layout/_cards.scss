@@ -29,6 +29,7 @@
 .card-blog {
     position: relative;
     border: 1px solid $background;
+    border-radius: $border-radius-small;
     text-align: left;
     height: 35rem;
     background: $lightest;
@@ -37,16 +38,22 @@
 }
 
 .card-blog:hover {
-    border: 1px solid $primary-orange;
+/*     border: 1px solid $primary-orange; */    
+    /* box-shadow: 0 5px 20px 0 $primary-orange(50%); */
+    /* box-shadow: 0 7px 30px -10px lighten($primary-orange, 50%); */
+    box-shadow: 0 7px 30px -10px $dark;
+    transform: translate(0px, -5px);
 }
 
 .card-blog__content {
     padding: 0 $padding-base $padding-big $padding-base;
 }
 
-.card-blog>img {
+.card-blog > img {
     height: 14rem;
     object-fit: cover;
+    border-top-left-radius: $border-radius-small;
+    border-top-right-radius: $border-radius-small;
 }
 
 .card-blog__content__created {

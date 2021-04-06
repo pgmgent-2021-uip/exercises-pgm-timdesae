@@ -24,6 +24,25 @@
                                 {{ navItem.title }}
                         {% endif %}
                     </a>
+
+                    {% if navItem.children | length %}
+                        <ul>
+                            {% for navChildPage in navItem.children %}
+                                <li>
+                                    <a href="{{ navChildPage.url | url }}">
+                                        {% if navChildPage.url == page.url %}
+                                            <strong class="active">
+                                                {{ navChildPage.title }} 
+                                            </strong>
+                                        {% else %}
+                                            {{ navChildPage.title }}    
+                                        {% endif %}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+                    {% endif %}
                 </li>
             {% endfor %}
         </ul>

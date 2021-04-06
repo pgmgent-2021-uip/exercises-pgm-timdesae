@@ -1,5 +1,5 @@
 ---
-layout: aboutcontact
+layout: twocolums
 title: About us
 eleventyNavigation:
     key: About us
@@ -7,11 +7,26 @@ eleventyNavigation:
 image: "banner-aboutus.jpg"
 ---
 
-<p>Hi there! 
-I’m Tim, a young creative person and the maker of all these designs. 
-There are no limits and nothing is too crazy, 
-that’s why thinking out of the box opens new worlds. 
-Design is a labour of love. 
-Trying out new technologies, share my ideas and never stop learning is what I really like to do. 
-For now I gonna stop here because less is more. Feel free to check out my designs and ask any questions. 
-See you soon!</p>
+<article class="aboutcontact h-layout">
+    <div class="aboutcontact__subtitel">
+        <h1>{{ title }}</h1>
+        <p>Dit is een project in het kader van de lessen User prototyping. Mijn portfolio kan je bekijken op onderstaande link</p>
+        <a href="https://desaegertim.myportfolio.com/" target="_blank">https://desaegertim.myportfolio.com</a>
+    </div>
+
+    <div class="aboutcontact__form">
+        <h1>Hi there!</h1>
+
+        <p>
+            I’m Tim, a young creative person and the maker of all these designs. 
+            There are no limits and nothing is too crazy, 
+            that’s why thinking out of the box opens new worlds. 
+            Design is a labour of love. 
+            Trying out new technologies, share my ideas and never stop learning is what I really like to do. 
+            For now I gonna stop here because less is more. Feel free to check out my designs and ask any questions. 
+            See you soon!
+        </p>
+
+        <img class="user user-me" src="/images/tim.jpeg" alt="Foto van mezelf">
+    </div>
+</article>

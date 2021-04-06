@@ -18,7 +18,8 @@ module.exports = function (eleventyConfig) {
   /* Pass through files  */
   eleventyConfig.addPassthroughCopy({
     'src/main.css':'/assets/main.css',
-    'src/images': '/images'
+    'src/images': '/images',
+    'src/scripts' : '/scripts'
   });
   return {
     dir: {
