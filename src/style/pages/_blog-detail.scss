@@ -38,4 +38,21 @@
         list-style: circle;
         margin-left: $margin-base;
     }
+
+    .more-articles {
+        background: $lightest;
+        padding: $padding-bigger;
+        margin-top: $margin-big;
+        border-radius: $border-radius-base;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: $margin-base;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+        }
+    }
 }
