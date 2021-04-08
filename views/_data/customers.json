@@ -1,20 +1,34 @@
 [
     {
-        "logo" : "logo2.svg"
+        "logo" : "cdnlogo_garmin.svg",
+        "alt" : "logo garmin"
     },
     {
-        "logo" : "logo7.svg"
+        "logo" : "cdnlogo_bing.svg",
+        "alt" : "logo bing"
     },
     {
-        "logo" : "logo3.svg"
+        "logo" : "cdnlogo_google-chrome.svg",
+        "alt" : "logo google chrome"
     },
     {
-        "logo" : "logo4.svg"
+        "logo" : "cdnlogo_haynespro.svg",
+        "alt" : "logo haynespro"
     },
     {
-        "logo" : "logo5.svg"
+        "logo" : "cdnlogo_keller-sports.svg",
+        "alt" : "logo keller-sports"
     },
     {
-        "logo" : "logo6.svg"
+        "logo" : "cdnlogo_national-payment-system-mir.svg",
+        "alt" : "logo mir"
+    },
+    {
+        "logo" : "cdnlogo_alphatauri.svg",
+        "alt" : "logo alphatauri"
+    },
+    {
+        "logo" : "cdnlogo_rivian-wordmark.svg",
+        "alt" : "logo rivian"
     }
 ]

@@ -14,18 +14,19 @@ eleventyNavigation:
     <div class="hero-text">
         <h1>You might like this...</h1>
             <div class="hero-text-p">
-                <h2>Word koning van de wandeling</h2>
-                <p>Ontdek elke week nieuwe wandelingen in jouw buurt en ga alleen of met vrienden op pad.</p>
+                <h2>Become the king of the hike</h2>
+                <p>Discover new hikes and places every day. 
+                Discover new places in your neighbourhood with your friends or alone.</p>
             </div>
             
             <div class="hero-text-p">
-                <h2>Ga op pad, verzamel badges en win kortingsbonnen</h2>
-                <p>Verzamel alle badges en complete de challenge.</p>
+                <h2>Hit the road, collect badges and win discounts at your local store.</h2>
+                <p>Collect all the badges by scanning the QR codes and you receive a nice discount in your local sport shop to hit the road even more.</p>
             </div>
 
             <div>
-                <h2>Custumize jouw eigen padvinder</h2>
-                <p>Maak jouw padvinder uniek!</p>
+                <h2>Customize your own hiker</h2>
+                <p>Make a unique hiker, make him like like you want him to look.</p>
             </div>
     </div>
 </section>
@@ -33,7 +34,7 @@ eleventyNavigation:
 <section class="h-layout cards">
         {% for feature in collections.features %}
             <div class="card">
-                <img src="./images/{{ feature.data.icon }}" alt="icon">
+                <img src="images/{{ feature.data.icon }}" alt="icon">
                 <h2>{{ feature.data.title }}</h2>
                 <p>{{ feature.data.text }}</p>
                 <button class="primary-button">Learn more</button>
@@ -41,32 +42,38 @@ eleventyNavigation:
         {% endfor %}
 </section>
 
-<section class="h-layout">
-    <h1 class="left">Testimonials</h1>
-    <div class="testimonials">
-        {% for quote in quotes %}
-        <div class="testimonial">
-            <p><span class="sign">''</span>{{ quote.quote }}</p>
-            <div class="testimonial_review">
-                <img class="user" src="./images/{{ quote.user }}" alt="user">
-                <div class="testimonial_review_info">
-                    <span class="user-name">{{ quote.author }}</span>
-                    <span class="user-date">{{ quote.date }}</span>
+{% if quotes | length %}
+    <section class="h-layout">
+        <h1 class="left">Testimonials</h1>
+        <div class="testimonials">
+            {% for quote in quotes %}
+            <div class="testimonial">
+                <p><span class="sign">''</span>{{ quote.quote }}</p>
+                <div class="testimonial_review">
+                    <img class="user" src="images/{{ quote.user }}" alt="user">
+                    <div class="testimonial_review_info">
+                        <span class="user-name">{{ quote.author }}</span>
+                        <span class="user-date">{{ quote.date }}</span>
+                    </div>
                 </div>
             </div>
+            {% endfor %}    
         </div>
-        {% endfor %}    
-    </div>
-</section>
+    </section>
+{% endif %}
 
-<section class="h-layout customers-section">
-    <h1 class="left">Klanten</h1>
-    <div class="customers">
-        {% for customer in customers %}
-            <img class="customer__logo" src="./images/{{ customer.logo }}" alt="icon">
-        {% endfor %}
-    </div>
-</section>
+{% if customers | length %}
+    <section class="h-layout customers-section">
+        <h1 class="left">Klanten</h1>
+        <div class="customers">
+            {% for customer in customers %}
+                <div class="customers__logo">
+                    <img src="images/logo/{{ customer.logo }}" alt="{{ customer.alt }}">
+                </div>
+            {% endfor %}
+        </div>
+    </section>  
+{% endif %}
 
 <section class="h-layout">
     <h1 class="left">Blogs</h1>

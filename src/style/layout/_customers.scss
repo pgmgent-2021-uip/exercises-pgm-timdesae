@@ -1,19 +1,21 @@
-.customers {
-    display: flex;
-    justify-content: space-between;
-}
-
-.customers > img {
-    height: 5rem;
-    opacity: 60%;
-}
-
-.customers > img:hover {
-    height: 5rem;
-    opacity: 100%;
-}
-
 .customers-section {
     margin-top: $margin-large;
     margin-bottom: $margin-large;
+
+    .customers {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__logo {
+            /* height: 5rem; */
+            flex: 1 1 25%;
+            height: 11rem;
+            text-align: center;
+            img[src$='svg']{
+                min-width: 2rem;
+                max-width: 6rem;
+                filter: brightness(0) invert(0);
+            }
+        }
+    }    
 }
