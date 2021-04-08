@@ -3,12 +3,12 @@
     justify-content: space-between;
     margin-bottom: $margin-big;
 
-    .aboutcontact__subtitel {
+    &__subtitel {
         width: 30%;
         margin-top: $margin-big;
     }
     
-    .aboutcontact__form {
+    &__form {
         width: 60%;
         padding-top: $padding-big;
 
@@ -39,8 +39,8 @@
         }
 
         .user-me {
+            margin-top: $margin-base;
             width: 10rem;
-            padding: $padding-small;
             border-radius: $border-radius-base;
             border: 3px solid $primary-orange;
         }

@@ -17,33 +17,37 @@ footer {
         display: flex;
         flex-wrap: wrap;
     
-        .footer__logo {
+        &__logo {
             width: 40%;
+
+            p {
+                width: 80%;
+            }
 
             img {
                 width: 10rem;
             }
         }
     
-        .footer__navigation {
+        &__navigation {
             width: 20%;
             li {
                 margin-bottom: $margin-small;
             }
         }
     
-        .footer__socials {
+        &__socials {
             width: 20%;
             li {
                 margin-bottom: $margin-small;
             }
         }
         
-        .footer__product {
+        &__product {
             width: 20%;
         }
     
-        .footer__copyright {
+        &__copyright {
             opacity: 50%;
             margin: 0 auto;
             p {
