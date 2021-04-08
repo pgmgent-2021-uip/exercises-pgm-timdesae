@@ -5,17 +5,30 @@
     .customers {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
 
         &__logo {
-            /* height: 5rem; */
-            flex: 1 1 25%;
-            height: 11rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 21%;
+            height: 8rem;
             text-align: center;
+            /* height: 4rem;
+            padding: 4rem; */
             img[src$='svg']{
-                min-width: 2rem;
-                max-width: 6rem;
+                min-height: 1rem;
+                max-height: 2rem;
+                filter: brightness(0) invert(0.5);
+            }
+
+            img[src$='svg']:hover{
+                min-height: 1rem;
+                max-height: 2rem;
                 filter: brightness(0) invert(0);
             }
+
         }
     }    
 }
