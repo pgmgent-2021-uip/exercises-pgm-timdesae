@@ -7,16 +7,17 @@
     padding: $padding-big;
     background: $lightest;
     border-radius: $border-radius-base;
+
+    .card {
+        width: 32%;
+        text-align: center;
+
+        img {
+            height: 3rem;
+        }   
+    }  
 }
 
-.card {
-    width: 32%;
-    text-align: center;
-}
-
-.card > img {
-    height: 3rem;
-}
 
 /* css for blog section on homepage */
 
@@ -24,45 +25,42 @@
     background: $background;
     padding: 0rem;
     flex-wrap: wrap;
-}
 
-.card-blog {
-    position: relative;
-    border: 1px solid $background;
-    border-radius: $border-radius-small;
-    text-align: left;
-    height: 35rem;
-    background: $lightest;
-    transition: all 0.3s ease;
-    margin-bottom: $margin-big;
-}
+    .card-blog {
+        position: relative;
+        border: 1px solid $background;
+        border-radius: $border-radius-small;
+        text-align: left;
+        height: 35rem;
+        background: $lightest;
+        transition: all 0.3s ease;
+        margin-bottom: $margin-big;
 
-.card-blog:hover {
-/*     border: 1px solid $primary-orange; */    
-    /* box-shadow: 0 5px 20px 0 $primary-orange(50%); */
-    /* box-shadow: 0 7px 30px -10px lighten($primary-orange, 50%); */
-    box-shadow: 0 7px 30px -10px $dark;
-    transform: translate(0px, -5px);
-}
+        img {
+            height: 14rem;
+            object-fit: cover;
+            border-top-left-radius: $border-radius-small;
+            border-top-right-radius: $border-radius-small;
+        }
+        
+        &__content {
+            padding: 0 $padding-base $padding-big $padding-base;
 
-.card-blog__content {
-    padding: 0 $padding-base $padding-big $padding-base;
-}
+            &__created {
+                font-size: $font-size-small;
+                position: absolute;
+                border-radius: $border-radius-small;
+                background: $primary-orange;
+                color: $lightest;
+                padding: $padding-small;
+                top: 11rem;
+                right: $margin-base;
+            }            
+        }        
+    }
 
-.card-blog > img {
-    height: 14rem;
-    object-fit: cover;
-    border-top-left-radius: $border-radius-small;
-    border-top-right-radius: $border-radius-small;
-}
-
-.card-blog__content__created {
-    font-size: $font-size-small;
-    position: absolute;
-    border-radius: $border-radius-small;
-    background: $primary-orange;
-    color: $lightest;
-    padding: $padding-small;
-    top: 11rem;
-    right: $margin-base;
+    .card-blog:hover {
+        box-shadow: 0 7px 30px -10px $dark;
+        transform: translate(0px, -5px);
+    }        
 }
