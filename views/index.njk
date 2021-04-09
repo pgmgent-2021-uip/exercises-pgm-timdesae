@@ -31,7 +31,7 @@ eleventyNavigation:
     </div>
 </section>
 
-<section class="h-layout cards">
+<section class="h-layout cards fade-in-up">
         {% for feature in collections.features %}
             <div class="card">
                 <img src="images/{{ feature.data.icon }}" alt="icon">
@@ -63,7 +63,7 @@ eleventyNavigation:
 {% endif %}
 
 {% if customers | length %}
-    <section class="h-layout customers-section">
+    <section class="h-layout customers-section fade-in-up">
         <h1 class="left">Clients</h1>
         <div class="customers">
             {% for customer in customers %}
@@ -75,7 +75,7 @@ eleventyNavigation:
     </section>  
 {% endif %}
 
-<section class="h-layout">
+<section class="h-layout fade-in-up">
     <h1 class="left">Blogs</h1>
     <div class="cards cards-blog">
         {% for blog in collections.blogs | coverFilter %}
