@@ -1,4 +1,5 @@
 ---
+layout: base
 title: Features
 tags: null
 eleventyNavigation:
@@ -8,3 +9,15 @@ eleventyNavigation:
 <section class="h-layout">
     <h1>features</h1>
 </section>
+
+<section class="h-layout cards">
+        {% for feature in collections.features %}
+            <div class="card">
+                <img src="../images/{{ feature.data.icon }}" alt="icon">
+                <h2>{{ feature.data.title }}</h2>
+                <p>{{ feature.data.text }}</p>
+                <a href="{{ feature.url }}" class="primary-button">Learn more</a>
+            </div>
+        {% endfor %}
+</section>
+

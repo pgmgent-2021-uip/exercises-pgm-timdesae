@@ -37,13 +37,13 @@ eleventyNavigation:
                 <img src="images/{{ feature.data.icon }}" alt="icon">
                 <h2>{{ feature.data.title }}</h2>
                 <p>{{ feature.data.text }}</p>
-                <button class="primary-button">Learn more</button>
+                <a href="{{ feature.url }}" class="primary-button">Learn more</a>
             </div>
         {% endfor %}
 </section>
 
 {% if quotes | length %}
-    <section class="h-layout">
+    <section class="h-layout fade-in-up">
         <h1 class="left">Testimonials</h1>
         <div class="testimonials">
             {% for quote in quotes %}
